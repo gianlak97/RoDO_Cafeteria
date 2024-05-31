@@ -1,0 +1,85 @@
+@media only screen and (min-width:400px) and (max-width: 600px){
+    .navegador{
+        font-size: large;
+        }
+    .maps iframe{
+    width: 290px;
+    height: 280px;
+}
+.formulario{
+    width: 300px;
+    margin: 0px;
+    margin-top: 15px;
+    grid-template-columns: (1fr);
+    grid-template-rows: (1fr, 1fr);
+    grid-template-areas:
+    "for"
+    "img";
+    .for{
+        width: 100vw;
+        border-radius: 0px;
+        text-align: center;
+    }
+    .personal{
+        width: 250px;
+    }
+    .item{
+        font-size: 15px;
+    }
+}
+.listado{
+    .bebidas{
+        h3{
+            font-size: medium;
+        }
+        ul{
+            li{
+                font-size: 8px;
+            }
+        }
+    }
+    .dulces{
+        h3{
+            font-size: medium;
+        }
+        ul{
+            li{
+                font-size: 8px;
+            }
+        }
+    }
+    .salados{
+        h3{
+            font-size: medium;
+        }
+        ul{
+            li{
+                font-size: 8px;
+            }
+        }
+    }
+}
+}
+@media only screen and (min-width:601px) and (max-width: 1000px){
+    .navegador{
+    font-size: x-large;
+    }
+    .formulario{
+        width: 100vw;
+        margin: 0px;
+        margin-top: 15px;
+        grid-template-columns: (1fr);
+        grid-template-rows: (1fr, 1fr);
+        grid-template-areas:
+        "for"
+        "img";
+        .for{
+            width: 100vw;
+            border-radius: 0px;
+            text-align: center;
+        }
+            .personal{
+            width: 550px;
+        }
+    }
+}

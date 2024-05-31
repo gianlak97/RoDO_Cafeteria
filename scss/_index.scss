@@ -1,0 +1,36 @@
+.inicio{
+    padding: 20px;
+    background: $colorClaro;
+    display: grid;
+    grid-template-columns: (1fr);
+    grid-template-rows: (auto, 2fr, auto);
+    gap: 5px;
+    grid-template-areas:
+    "titulo"
+    "fotos"
+    "invitacion";
+    .titulo{
+        grid-area: titulo;
+        text-align: center;
+        font-weight: 500;
+        text-decoration: underline;
+        color: $colorOscuro;
+        margin-top: 3rem;
+    }
+    .fotos{
+        padding: 40px;
+        grid-area: fotos;        
+        justify-self: center;
+        width: 60%;
+    }
+    .invitacion{
+        grid-area: invitacion;
+        text-align: center;
+        padding: 20px;
+        color: $colorOscuro;
+        p{
+            font-size: 1.2rem;
+            font-weight: 300;
+        }
+    }
+}

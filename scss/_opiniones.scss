@@ -1,0 +1,42 @@
+.formulario{
+    margin: 20px;
+    display: grid;
+    grid-template-columns: (1fr, 1fr);
+    grid-template-rows: (1fr);
+    gap: 5px;
+    grid-template-areas:
+    "for img";
+    .for{
+        width: 45vw;
+        text-align:left ;
+        padding: 10px ;
+        grid-area: for;
+        background-color: $colorMedio; 
+        border: solid $colorMedio 5px;
+        border-radius: 20px;
+        color: $colorOscuro;
+    }
+    .opinion{
+        text-align: center;
+        padding-top: 50px;
+        
+        text-decoration: underline;
+    }
+    .item{
+        padding-top: 50px;
+        font-size: 20px;
+    }
+    .saludo{
+        padding-top: 150px;
+        text-align: center;
+    }
+}    
+.img{
+    grid-area: img;
+    padding: 10px auto;
+    text-align: center;
+    .personal{
+        padding: 20px;
+        width: 80%;
+    }
+}

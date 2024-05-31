@@ -1,0 +1,259 @@
+* {
+  margin: o;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Patrick Hand SC", cursive;
+}
+
+.fondo {
+  background: rgb(243, 232, 212);
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: rgb(190, 127, 78);
+}
+.header .logo {
+  width: 160px;
+  display: inline-block;
+}
+
+.navegador {
+  font-size: 2rem;
+  color: rgb(94, 43, 14);
+}
+.navegador a {
+  border-radius: 10px;
+  color: rgb(94, 43, 14);
+}
+.navegador a:hover {
+  background-color: rgb(94, 43, 14);
+  border-radius: 10px;
+  color: rgb(243, 232, 212);
+}
+
+.footer {
+  text-align: center;
+  background: rgb(190, 127, 78);
+  justify-items: center;
+  color: rgb(94, 43, 14);
+}
+.footer h2 {
+  margin: 5px;
+}
+.footer img {
+  width: 25px;
+  margin: 5px;
+}
+.footer .icono1 {
+  width: 150px;
+  margin: 5px;
+}
+.footer h3 {
+  margin: 5px;
+  font-size: 15px;
+  color: rgb(94, 43, 14);
+}
+
+.inicio {
+  padding: 20px;
+  background: rgb(243, 232, 212);
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto, 2fr, auto;
+  gap: 5px;
+  grid-template-areas: "titulo" "fotos" "invitacion";
+}
+.inicio .titulo {
+  grid-area: titulo;
+  text-align: center;
+  font-weight: 500;
+  text-decoration: underline;
+  color: rgb(94, 43, 14);
+  margin-top: 3rem;
+}
+.inicio .fotos {
+  padding: 40px;
+  grid-area: fotos;
+  justify-self: center;
+  width: 60%;
+}
+.inicio .invitacion {
+  grid-area: invitacion;
+  text-align: center;
+  padding: 20px;
+  color: rgb(94, 43, 14);
+}
+.inicio .invitacion p {
+  font-size: 1.2rem;
+  font-weight: 300;
+}
+
+.presentacion {
+  font-style: normal;
+  text-align: center;
+  padding: 1rem;
+  font-size: x-large;
+  color: rgb(94, 43, 14);
+}
+
+.nuestro_cafe {
+  font-style: normal;
+  text-align: center;
+  padding: 1rem;
+  font-size: x-large;
+  color: rgb(94, 43, 14);
+}
+
+.titulo_listado {
+  text-align: center;
+  color: rgb(94, 43, 14);
+}
+
+.listado {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: baseline;
+  margin: 10px;
+  flex-wrap: nowrap;
+  width: auto;
+  height: auto;
+  border: 5px solid black;
+  border-radius: 20px;
+  background: rgb(52, 42, 38);
+  background: radial-gradient(circle, rgb(225, 175, 114) 0%, rgb(186, 141, 86) 50%, rgb(132, 95, 51) 100%);
+}
+.listado .bebidas {
+  order: -1;
+}
+.listado .dulces {
+  order: 0;
+}
+.listado .salados {
+  order: 1;
+}
+
+.formulario {
+  margin: 20px;
+  display: grid;
+  grid-template-columns: 1fr, 1fr;
+  grid-template-rows: 1fr;
+  gap: 5px;
+  grid-template-areas: "for img";
+}
+.formulario .for {
+  width: 45vw;
+  text-align: left;
+  padding: 10px;
+  grid-area: for;
+  background-color: rgb(190, 127, 78);
+  border: solid rgb(190, 127, 78) 5px;
+  border-radius: 20px;
+  color: rgb(94, 43, 14);
+}
+.formulario .opinion {
+  text-align: center;
+  padding-top: 50px;
+  text-decoration: underline;
+}
+.formulario .item {
+  padding-top: 50px;
+  font-size: 20px;
+}
+.formulario .saludo {
+  padding-top: 150px;
+  text-align: center;
+}
+
+.img {
+  grid-area: img;
+  padding: 10px auto;
+  text-align: center;
+}
+.img .personal {
+  padding: 20px;
+  width: 80%;
+}
+
+.lista_combos {
+  margin: 20px;
+  margin-top: 100px;
+}
+.lista_combos .titulo_combo {
+  text-align: center;
+  text-decoration: underline;
+  color: rgb(94, 43, 14);
+  padding-bottom: 35px;
+}
+
+@media only screen and (min-width: 375px) and (max-width: 600px) {
+  .navegador {
+    font-size: large;
+  }
+  .maps iframe {
+    width: 290px;
+    height: 280px;
+  }
+  .formulario {
+    width: 300px;
+    margin: 0px;
+    margin-top: 15px;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr, 1fr;
+    grid-template-areas: "for" "img";
+  }
+  .formulario .for {
+    width: 100vw;
+    border-radius: 0px;
+    text-align: center;
+  }
+  .formulario .personal {
+    width: 250px;
+  }
+  .formulario .item {
+    font-size: 15px;
+  }
+  .listado .bebidas h3 {
+    font-size: medium;
+  }
+  .listado .bebidas ul li {
+    font-size: 8px;
+  }
+  .listado .dulces h3 {
+    font-size: medium;
+  }
+  .listado .dulces ul li {
+    font-size: 8px;
+  }
+  .listado .salados h3 {
+    font-size: medium;
+  }
+  .listado .salados ul li {
+    font-size: 8px;
+  }
+}
+@media only screen and (min-width: 601px) and (max-width: 1000px) {
+  .navegador {
+    font-size: x-large;
+  }
+  .formulario {
+    width: 100vw;
+    margin: 0px;
+    margin-top: 15px;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr, 1fr;
+    grid-template-areas: "for" "img";
+  }
+  .formulario .for {
+    width: 100vw;
+    border-radius: 0px;
+    text-align: center;
+  }
+  .formulario .personal {
+    width: 550px;
+  }
+}
+
+/*# sourceMappingURL=estilo.css.map */

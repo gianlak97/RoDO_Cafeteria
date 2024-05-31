@@ -1,0 +1,26 @@
+.titulo_listado{
+    text-align: center;
+    color:$colorOscuro;
+}
+.listado{
+display:flex;
+justify-content: space-evenly;
+align-items:baseline;
+margin: 10px;
+flex-wrap: nowrap;
+width: auto;
+height: auto;
+border: 5px solid black;
+border-radius: 20px;
+background: rgb(52, 42, 38);
+background: radial-gradient(circle, rgb(225, 175, 114) 0%, rgb(186, 141, 86) 50%, rgb(132, 95, 51) 100%);
+.bebidas{
+    order: -1;
+}
+.dulces{
+    order: 0;
+    }
+.salados{
+    order: 1;
+}
+}
