@@ -60,7 +60,7 @@
 }
 
 /*configuración del body*/
-inicio {
+.inicio {
   padding: 20px;
   background: rgb(243, 232, 212);
   display: grid;
@@ -70,7 +70,7 @@ inicio {
   grid-template-areas: "titulo" "fotos" "invitacion";
   /*titulo imagen y texto*/
 }
-inicio .titulo {
+.inicio .titulo {
   grid-area: titulo;
   text-align: center;
   font-weight: 500;
@@ -78,19 +78,19 @@ inicio .titulo {
   color: rgb(94, 43, 14);
   margin-top: 3rem;
 }
-inicio .fotos {
+.inicio .fotos {
   padding: 40px;
   grid-area: fotos;
   justify-self: center;
   width: 60%;
 }
-inicio .invitacion {
+.inicio .invitacion {
   grid-area: invitacion;
   text-align: center;
   padding: 20px;
   color: rgb(94, 43, 14);
 }
-inicio .invitacion p {
+.inicio .invitacion p {
   font-size: 1.2rem;
   font-weight: 300;
 }
