@@ -122,7 +122,7 @@
   margin-top: 35px;
 }
 
-/*irframe*/
+/*iframe*/
 .mapa {
   width: 60%;
   height: 300px;
@@ -223,13 +223,20 @@
 }
 
 @media only screen and (min-width: 0px) and (max-width: 600px) {
+  /*Gral.*/
   .navegador {
     font-size: large;
   }
+  /*Index*/
+  .fotos {
+    width: 90%;
+  }
+  /*Conocenos*/
   .maps iframe {
     width: 290px;
     height: 280px;
   }
+  /*Opiniones*/
   .formulario {
     width: 300px;
     margin: 0px;
@@ -249,6 +256,7 @@
   .formulario .item {
     font-size: 15px;
   }
+  /*Menu*/
   .listado {
     display: block;
   }
@@ -261,14 +269,21 @@
   .listado .salados h3 {
     font-size: medium;
   }
+  /*Promo*/
   .table {
     font-size: small;
   }
 }
 @media only screen and (min-width: 601px) and (max-width: 1000px) {
+  /*Gral.*/
   .navegador {
     font-size: x-large;
   }
+  /*Index*/
+  .fotos {
+    width: 90%;
+  }
+  /*Opiniones*/
   .formulario {
     width: 100vw;
     margin: 0px;

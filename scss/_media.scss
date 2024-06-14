@@ -1,55 +1,70 @@
 @media only screen and (min-width:0px) and (max-width: 600px){
+    /*Gral.*/
     .navegador{
         font-size: large;
-        }
+    }
+    /*Index*/
+    .fotos{
+        width: 90%;
+    }
+    /*Conocenos*/
     .maps iframe{
-    width: 290px;
-    height: 280px;
-}
-.formulario{
-    width: 300px;
-    margin: 0px;
-    margin-top: 15px;
-    grid-template-columns: (1fr);
-    grid-template-rows: (1fr, 1fr);
-    grid-template-areas:
-    "for"
-    "img";
-    .for{
-        width: 100vw;
-        border-radius: 0px;
-        text-align: center;
+        width: 290px;
+        height: 280px;
     }
-    .personal{
-        width: 250px;
+    /*Opiniones*/
+    .formulario{
+        width: 300px;
+        margin: 0px;
+        margin-top: 15px;
+        grid-template-columns: (1fr);
+        grid-template-rows: (1fr, 1fr);
+        grid-template-areas:
+        "for"
+        "img";
+        .for{
+            width: 100vw;
+            border-radius: 0px;
+            text-align: center;
+            }
+        .personal{
+            width: 250px;
+            }
+        .item{
+            font-size: 15px;
+            }
     }
-    .item{
-        font-size: 15px;
+    /*Menu*/
+    .listado{
+        display: block;
+        .bebidas{
+            h3{
+                font-size: medium;}
+            }
+        .dulces{
+            h3{
+                font-size: medium;}
+            }
+        .salados{
+            h3{
+                font-size: medium;}
+            }
     }
-}
-.listado{
-    display: block;
-    .bebidas{
-        h3{
-            font-size: medium;}
+    /*Promo*/
+    .table{
+        font-size: small;
     }
-    .dulces{
-        h3{
-            font-size: medium;}
     }
-    .salados{
-        h3{
-            font-size: medium;}
-    }
-}
-.table{
-    font-size: small;
-}
-}
 @media only screen and (min-width:601px) and (max-width: 1000px){
+    /*Gral.*/
     .navegador{
-    font-size: x-large;
+        font-size: x-large;
     }
+    /*Index*/
+    .fotos{
+        width: 90%;
+    }
+    /*Opiniones*/
     .formulario{
         width: 100vw;
         margin: 0px;
@@ -63,9 +78,9 @@
             width: 100vw;
             border-radius: 0px;
             text-align: center;
-        }
-            .personal{
+            }
+        .personal{
             width: 550px;
-        }
+            }
     }
-}
+    }
