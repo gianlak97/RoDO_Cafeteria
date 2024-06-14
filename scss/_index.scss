@@ -1,4 +1,5 @@
-.inicio{
+    /*configuración del body*/
+    inicio{
     padding: 20px;
     background: $colorClaro;
     display: grid;
@@ -9,6 +10,8 @@
     "titulo"
     "fotos"
     "invitacion";
+
+    /*titulo imagen y texto*/
     .titulo{
         grid-area: titulo;
         text-align: center;

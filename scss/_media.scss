@@ -1,4 +1,4 @@
-@media only screen and (min-width:400px) and (max-width: 600px){
+@media only screen and (min-width:0px) and (max-width: 600px){
     .navegador{
         font-size: large;
         }
@@ -28,36 +28,22 @@
     }
 }
 .listado{
+    display: block;
     .bebidas{
         h3{
-            font-size: medium;
-        }
-        ul{
-            li{
-                font-size: 8px;
-            }
-        }
+            font-size: medium;}
     }
     .dulces{
         h3{
-            font-size: medium;
-        }
-        ul{
-            li{
-                font-size: 8px;
-            }
-        }
+            font-size: medium;}
     }
     .salados{
         h3{
-            font-size: medium;
-        }
-        ul{
-            li{
-                font-size: 8px;
-            }
-        }
+            font-size: medium;}
     }
+}
+.table{
+    font-size: small;
 }
 }
 @media only screen and (min-width:601px) and (max-width: 1000px){

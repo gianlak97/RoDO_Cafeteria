@@ -1,3 +1,9 @@
+@mixin confi{
+    text-align: center;
+    padding-top: 50px;
+}
+
+/*configuración del formulario*/
 .formulario{
     margin: 20px;
     display: grid;
@@ -6,9 +12,12 @@
     gap: 5px;
     grid-template-areas:
     "for img";
+
+    /*interior del formulario*/
     .for{
-        width: 45vw;
-        text-align:left ;
+        width: 30vw;
+        height: auto;
+        text-align:left;
         padding: 10px ;
         grid-area: for;
         background-color: $colorMedio; 
@@ -17,26 +26,25 @@
         color: $colorOscuro;
     }
     .opinion{
-        text-align: center;
-        padding-top: 50px;
-        
-        text-decoration: underline;
+            @include confi;
+            text-decoration: underline;
     }
     .item{
-        padding-top: 50px;
-        font-size: 20px;
+            padding-top: 50px;
+            font-size: 20px;
     }
     .saludo{
-        padding-top: 150px;
-        text-align: center;
+            @include confi;
     }
-}    
+}
+    
+/*imagenes fuera del formulario*/ 
 .img{
     grid-area: img;
     padding: 10px auto;
     text-align: center;
     .personal{
         padding: 20px;
-        width: 80%;
+        width: 60%;
     }
 }

@@ -1,14 +1,28 @@
-.presentacion{
-    font-style:normal;
+/*textos*/
+
+@mixin texto{
+    font-style: normal;
     text-align: center;
     padding: 1rem;
     font-size: x-large;
     color: $colorOscuro;
+}
+.presentacion{
+    @include texto;
+    margin: 25px;
 }
 .nuestro_cafe{
-    font-style:normal;
-    text-align: center;
-    padding: 1rem;
-    font-size: x-large;
-    color: $colorOscuro;
+   @include texto;
+    h2{
+        margin: 25px;
+    }
+    h3{
+        margin-top: 35px;
+    }
 }
+/*irframe*/
+.mapa{
+        width: 60%;
+        height: 300px;
+    }
+    

@@ -1,3 +1,5 @@
+@charset "UTF-8";
+/*configuración general*/
 * {
   margin: o;
   padding: 0;
@@ -57,7 +59,8 @@
   color: rgb(94, 43, 14);
 }
 
-.inicio {
+/*configuración del body*/
+inicio {
   padding: 20px;
   background: rgb(243, 232, 212);
   display: grid;
@@ -65,8 +68,9 @@
   grid-template-rows: auto, 2fr, auto;
   gap: 5px;
   grid-template-areas: "titulo" "fotos" "invitacion";
+  /*titulo imagen y texto*/
 }
-.inicio .titulo {
+inicio .titulo {
   grid-area: titulo;
   text-align: center;
   font-weight: 500;
@@ -74,29 +78,31 @@
   color: rgb(94, 43, 14);
   margin-top: 3rem;
 }
-.inicio .fotos {
+inicio .fotos {
   padding: 40px;
   grid-area: fotos;
   justify-self: center;
   width: 60%;
 }
-.inicio .invitacion {
+inicio .invitacion {
   grid-area: invitacion;
   text-align: center;
   padding: 20px;
   color: rgb(94, 43, 14);
 }
-.inicio .invitacion p {
+inicio .invitacion p {
   font-size: 1.2rem;
   font-weight: 300;
 }
 
+/*textos*/
 .presentacion {
   font-style: normal;
   text-align: center;
   padding: 1rem;
   font-size: x-large;
   color: rgb(94, 43, 14);
+  margin: 25px;
 }
 
 .nuestro_cafe {
@@ -106,12 +112,26 @@
   font-size: x-large;
   color: rgb(94, 43, 14);
 }
+.nuestro_cafe h2 {
+  margin: 25px;
+}
+.nuestro_cafe h3 {
+  margin-top: 35px;
+}
+
+/*irframe*/
+.mapa {
+  width: 60%;
+  height: 300px;
+}
 
 .titulo_listado {
   text-align: center;
   color: rgb(94, 43, 14);
+  margin: 25px;
 }
 
+/*configuración del menu*/
 .listado {
   display: flex;
   justify-content: space-evenly;
@@ -122,19 +142,21 @@
   height: auto;
   border: 5px solid black;
   border-radius: 20px;
-  background: rgb(52, 42, 38);
-  background: radial-gradient(circle, rgb(225, 175, 114) 0%, rgb(186, 141, 86) 50%, rgb(132, 95, 51) 100%);
+  background: rgb(178, 133, 52);
+  background: linear-gradient(180deg, rgb(178, 133, 52) 0%, rgb(222, 200, 160) 50%, rgb(183, 104, 48) 100%);
 }
 .listado .bebidas {
-  order: -1;
+  margin: 15px;
 }
 .listado .dulces {
-  order: 0;
+  margin: 15px;
 }
 .listado .salados {
-  order: 1;
+  margin: 15px;
+  margin-bottom: 30px;
 }
 
+/*configuración del formulario*/
 .formulario {
   margin: 20px;
   display: grid;
@@ -142,9 +164,11 @@
   grid-template-rows: 1fr;
   gap: 5px;
   grid-template-areas: "for img";
+  /*interior del formulario*/
 }
 .formulario .for {
-  width: 45vw;
+  width: 30vw;
+  height: auto;
   text-align: left;
   padding: 10px;
   grid-area: for;
@@ -163,10 +187,11 @@
   font-size: 20px;
 }
 .formulario .saludo {
-  padding-top: 150px;
   text-align: center;
+  padding-top: 50px;
 }
 
+/*imagenes fuera del formulario*/
 .img {
   grid-area: img;
   padding: 10px auto;
@@ -174,11 +199,11 @@
 }
 .img .personal {
   padding: 20px;
-  width: 80%;
+  width: 60%;
 }
 
+/*configuración de la tabla*/
 .lista_combos {
-  margin: 20px;
   margin-top: 100px;
 }
 .lista_combos .titulo_combo {
@@ -188,7 +213,13 @@
   padding-bottom: 35px;
 }
 
-@media only screen and (min-width: 375px) and (max-width: 600px) {
+.tabla {
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+}
+
+@media only screen and (min-width: 0px) and (max-width: 600px) {
   .navegador {
     font-size: large;
   }
@@ -215,23 +246,20 @@
   .formulario .item {
     font-size: 15px;
   }
+  .listado {
+    display: block;
+  }
   .listado .bebidas h3 {
     font-size: medium;
-  }
-  .listado .bebidas ul li {
-    font-size: 8px;
   }
   .listado .dulces h3 {
     font-size: medium;
   }
-  .listado .dulces ul li {
-    font-size: 8px;
-  }
   .listado .salados h3 {
     font-size: medium;
   }
-  .listado .salados ul li {
-    font-size: 8px;
+  .table {
+    font-size: small;
   }
 }
 @media only screen and (min-width: 601px) and (max-width: 1000px) {
