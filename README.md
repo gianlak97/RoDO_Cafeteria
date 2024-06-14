@@ -1,3 +1,3 @@
 #RoDo Cafeteria
 
-Primer pagina creada en el curso de "Desarrollo web" de una cafeteria simple y sencilla.
+Primer pagina simple y sencilla, sobre una cafeteria. Creada para el final del curso de "Desarrollo web".
