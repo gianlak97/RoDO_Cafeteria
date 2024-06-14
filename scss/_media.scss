@@ -8,9 +8,14 @@
         width: 90%;
     }
     /*Conocenos*/
-    .maps iframe{
+    .maps{
+        display: flex;
+        justify-content: center;
+        iframe{
         width: 290px;
         height: 280px;
+        
+        }
     }
     /*Opiniones*/
     .formulario{

@@ -232,6 +232,10 @@
     width: 90%;
   }
   /*Conocenos*/
+  .maps {
+    display: flex;
+    justify-content: center;
+  }
   .maps iframe {
     width: 290px;
     height: 280px;
